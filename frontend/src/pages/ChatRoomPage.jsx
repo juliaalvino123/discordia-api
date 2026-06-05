@@ -1683,13 +1683,13 @@ const styles = {
   },
 
   rightPanel: {
-    position: 'relative',
-    zIndex: 3,
-    background:
-      '#1a1b1e',
+    background: '#121214', 
     borderLeft: '1px solid rgba(148, 163, 184, 0.12)',
-    backdropFilter: 'blur(24px)',
-    padding: '24px 18px',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100vh',
+    overflow: 'hidden', 
+    
   },
 
   rightHeader: {
@@ -1732,10 +1732,14 @@ const styles = {
     boxShadow: 'none',
   },
 
-  membersList: {
-    display: 'grid',
-    gap: '12px',
-    marginBottom: '22px',
+membersList: {
+    flex: 1,             
+    overflowY: 'auto',   
+    padding: '12px',    
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '8px',
+
   },
 
   memberError: {
